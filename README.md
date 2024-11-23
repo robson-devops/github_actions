@@ -47,7 +47,7 @@ https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-f
   - Acessa esse diretório e criar o arquivo workflow_exemplo.yaml(pode ser qualquer nome);
 
 Arquivo __workflow_exemplo.yaml__  
-```bash
+```yaml
 name: Workflow exemplo # Define o nome do workflow
 on: workflow_dispatch  # Define o evento que iniciará esse workflow. Manual para essa opção.
 jobs:
@@ -126,7 +126,8 @@ jobs:
             run: echo "Efetuando o deploy da aplicação..."
               
 ```
-**Observação:**  
+
+> **Observação:**  
 Ao efetuar o push no repositório local, um erro poderá ocorrer, informando a falta de configuração de um Token com as permissões necessárias. Nesse caso, acesse o Github, clique na sua foto localizado no canto superior direito, escolha a opção "settings", "Developer Settings", "Personal access tokens", "tokens(classic)". Crie o token com as opções: **repo** e **workflow**.
 Em seguida, execute o push novamente.    
 
