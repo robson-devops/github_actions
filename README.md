@@ -91,7 +91,7 @@ Fonte: https://docs.github.com/pt/actions/writing-workflows/choosing-when-your-w
 No exemplo abaixo, é mostrado um workflow que usa duas actions, sendo: uma para o checkout dos arquivos do repositório e outra nodejs para o build de projetos construídos em NodeJS.
 
 **Exemplo:**
-```bash
+```yaml
 name: Usando Actions 
 on: [push, workflow_dispatch] # Para múltiplos eventos 
 jobs:
