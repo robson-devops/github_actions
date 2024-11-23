@@ -1,0 +1,10 @@
+name: Workflow exemplo # Define o nome do workflow
+on: workflow_dispatch  # Define o evento que iniciará esse workflow. Manual para essa opção.
+jobs:
+    job1:
+        runs-on: ubuntu-latest # Define o ambiente de execução
+        steps:
+          - name: Executa o primeiro comando
+            run: echo "Mensagem..."
+          - name: Executa o segundo comando
+            run: echo "Outra mensagem"
